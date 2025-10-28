@@ -1,34 +1,21 @@
-🧠 PDF Question Answering using LangChain + Groq + Chroma
-📄 Overview
+# 🧠 PDF RAG AI — Intelligent Q&A over Documents  
 
-This project demonstrates how to extract information from PDFs and answer user questions using LangChain, Groq LLM, and Chroma vector database.
-It reads a PDF file (e.g., budget_speech.pdf), splits it into text chunks, embeds the chunks, stores them in a vector database, and retrieves the most relevant context to answer natural language questions.
+This project demonstrates **Retrieval-Augmented Generation (RAG)** using:
+- 🧩 **LangChain** — for text chunking and pipeline building  
+- ⚡ **Groq LLM** — for fast, low-latency answers  
+- 🗂️ **Chroma Vector DB** — for document retrieval  
 
-🚀 Features
+## 📄 How it works
+1. Extracts text from a PDF (`budget_speech.pdf`)  
+2. Splits content into chunks  
+3. Stores embeddings in **Chroma**  
+4. Uses **LLM** to answer user queries based on the document  
 
-PDF text extraction using PyPDF2
+## 🚀 Run it Locally
+```bash
+pip install -r requirements.txt
+python RAG(PDF).ipynb
 
-Text chunking and preprocessing
-
-Semantic search using Chroma vector store
-
-Question-answering with Groq Llama 3.1 model
-
-Context-aware responses using LangChain chain mechanism
-
-🧩 Tech Stack
-
-Python 3.10+
-
-LangChain
-
-Groq API
-
-Chroma DB
-
-Sentence Transformers
-
-PyPDF2
 
 ⚙️ Setup Instructions
 
